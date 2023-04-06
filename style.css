@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+:root{
+    --bs-body-font-family: 'Nunito Sans', sans-serif;
+    --bs-border-width: 3px;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+nav {
+    backdrop-filter: blur(0.5rem);
+}
+.active:before {
+    content: "→ ";
+}
+
+@media (min-width: 992px) {
+    .active:before {
+        content: "↓ ";
+    }
+}
+
+#fondito{
+    background:blue url('https://picsum.photos/id/25/1500/800/?blur=2') no-repeat left top;
+    background-size:cover;
+}
+
+
+    
