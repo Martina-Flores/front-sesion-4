@@ -6,7 +6,7 @@
         <!--En la siguiente línea voy por el estilo CSS que ofrece Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
         <!--Estilo al que puedo agregar más reglas-->
-        <link href="style.css" rel="stylesheet" />
+        <link href="styles.pure.css" rel="stylesheet" />
         <title>ESTO ES BOOTSTRAP</title>
     </head>
     <body>
@@ -29,9 +29,13 @@
         </nav>
         <!--La sección para el canvas creado con p5.js-->
         <section class="vh-100 overflow-hidden" id="sketch">
-              <div class="position-absolute top-50 start-50 translate-middle w-50">
-                  <p class="fs-4 text-white">Lo que encuentras en este sitio web son algunos bocetos de introducción a la programación. En cada uno usé <strong>p5.js</strong> una biblioteca de JavaScript para la programación creativa, que busca hacer que programar sea accesible e inclusivo para artistas, diseñadores, educadores, principiantes y cualquier otra persona.p5.js es gratuito y de código abierto. <a href="#laIdentidadEsUnica" class="link-light">Te invito a ver unos ejemplos.</a></p>
-              </div>
+            <div class="position-absolute top-50 start-50 translate-middle w-50">
+                <p class="fs-4 text-white">
+                    Lo que encuentras en este sitio web son algunos bocetos de introducción a la programación. En cada uno usé <strong>p5.js</strong> una biblioteca de JavaScript para la programación creativa, que busca hacer que programar
+                    sea accesible e inclusivo para artistas, diseñadores, educadores, principiantes y cualquier otra persona.p5.js es gratuito y de código abierto.
+                    <a href="#laIdentidadEsUnica" class="link-light">Te invito a ver unos ejemplos.</a>
+                </p>
+            </div>
         </section>
         <!--La sección con 3 descripciones-->
         <section class="py-5 border-top border-bottom" id="laIdentidadEsUnica">
@@ -108,13 +112,18 @@
         <!-- Lo que sigue es la biblioteca de Bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
         <!-- Lo que sigue es la biblioteca de p5.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"
+            integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
         <!-- Lo que sigue es el sketch resuelto con p5.js-->
         <script>
             var x;
 
             function setup() {
-                createCanvas(windowWidth, windowHeight).parent("sketch").style('z-index',-1);
+                createCanvas(windowWidth, windowHeight).parent("sketch").style("z-index", -1);
                 colorMode(HSB, 360, 100, 100);
                 x = 0;
             }
